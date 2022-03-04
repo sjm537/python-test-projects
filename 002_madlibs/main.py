@@ -10,7 +10,7 @@
 playMadlib = input("Would you like to play? Y or N\n")
 
 while playMadlib == "Y":
-    n = input("Select Madlib 1 or 2:\n")
+    n = input("Select Madlib 1, 2, or 3:\n")
     if n == "1":
         #Madlib 1
         adj = input("Adjective: ")
@@ -18,10 +18,11 @@ while playMadlib == "Y":
         verb2 = input("Verb: ")
         famous_person = input("Famous Person: ")
 
-        madlib1 = f"Computer programming is so {adj}!\n\
-        It makes me so excited all the time because\n\
-        I love to {verb1}. Stay hydrated and {verb2}\n\
-        like you are {famous_person}!"
+        madlib1 = f"Why I Like Computer Programming\n\
+            Computer programming is so {adj}!\n\
+            It makes me so excited all the time because\n\
+            I love to {verb1}. Stay hydrated and {verb2}\n\
+            like you are {famous_person}!"
 
         print(madlib1)
 
@@ -38,6 +39,20 @@ while playMadlib == "Y":
             2. Cook {favFood} for dinner\n\
             3. Program app that {verb2}s for me"
         print(madlib2)
+
+    elif n == "3":
+        #Madlib 3
+        noun1 = input("Noun: ")
+        noun2 = input("Noun: ")
+        famperson = input("Famous Person: ")
+        scary = input("Something Scary: ")
+
+        madlib3 = f"Nic Cage's Next Movie\n\
+            In his next film, Nic Cage will star\n\
+            as a {noun1} who has to hunt down a {noun2}\n\
+            in order to save {famperson} from {scary}"
+        
+        print(madlib3)
 
     playMadlib = input("Would you like to play again? Y or N\n")
 
