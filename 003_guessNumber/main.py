@@ -11,4 +11,20 @@ def guess(x):
             print("Sorry, guess again. Too high.")
     print(f"Yay, congrats. You have guessed the number {random_number} correctly!!")
 
-guess(10)
+playGuessNum = input("Would you like to play? Y or N\n")
+
+while playGuessNum == "Y":
+    
+    n = int(input("Pick a maximum number for the computer to pick from: "))
+    guess(n)
+    
+    playGuessNum = input("Would you like to play again? Y or N")
+
+else:
+    print ("Goodbye!")
+
+
+
+ 
+
+
